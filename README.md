@@ -1,4 +1,4 @@
-# 電子書籍"はじめてのフレームワークとしてのFuelPHP"**で学ぶLaravel4**
+# 電子書籍"はじめてのフレームワークとしてのFuelPHP"で学ぶLaravel4
 
 [はじめてのフレームワークとしてのFuelPHP - 達人出版会](http://tatsu-zine.com/books/fuelphp1st "はじめてのフレームワークとしてのFuelPHP - 達人出版会")を参考にサンプルと同じものをLaravelで実装してその違いを記録していく。
 
