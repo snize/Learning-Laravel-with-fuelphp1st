@@ -26,6 +26,7 @@ class FormController extends BaseController
 
     public function postConfirm()
     {
+        $input = Input::all();
         $validator = $this->get_validation();
 
         if ($validator->fails()) {
@@ -37,6 +38,8 @@ class FormController extends BaseController
         } else {
             $this->layout->title = '確認 | コンタクトフォーム';
             $this->layout->content = 'qqq';
+            // 確認画面のサンプルが見当たらないけど以下でいいと思う
+            return View::make('form.confirm', $input);
         }
     }
 
