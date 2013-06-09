@@ -15,6 +15,10 @@ class FormController extends BaseController
     |	Route::get('/', 'HomeController@showWelcome');
     |
     */
+    public function __construct()
+    {
+        $this->beforeFilter('csrf', array('on' => 'post'));
+    }
 
     protected $layout = 'template';
 
@@ -22,6 +26,13 @@ class FormController extends BaseController
     {
         $this->layout->title = 'コンタクトフォーム';
         $this->layout->content = View::make('form.index');
+    }
+
+    public function postIndex()
+    {
+        $this->layout->title = 'コンタクトフォーム';
+        return Redirect::to('form/index')
+            ->withInput();
     }
 
     public function postConfirm()
