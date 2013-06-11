@@ -54,6 +54,12 @@ class FormController extends BaseController
         }
     }
 
+    public function postSend()
+    {
+        //Todo メール用にViewを作る
+        return View::make('form.send');
+    }
+
     public function get_validation()
     {
         //Todo trimがない
